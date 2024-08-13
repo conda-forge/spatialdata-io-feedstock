@@ -21,19 +21,32 @@ requirements:
     - hatch-vcs
     - pip
   run:
-    - python >=3.9
-    - anndata
-    - numpy
-    - scanpy
-    - spatialdata >=0.2.1
-    - scikit-image
-    - h5py
-    - joblib
-    - imagecodecs
+    - anndata >=0.9.1
+    - dask
     - dask-image
+    - geopandas
+    - h5py
+    - imagecodecs
+    - imageio
+    - joblib
+    - multiscale_spatial_image >=1.0.0
+    - numpy
+    - packaging
+    - pandas
     - pyarrow
+    - python >=3.9
+    - pyyaml
     - readfcs
-
+    - scanpy
+    - scikit-image
+    - scipy
+    - shapely
+    - spatial_image >=1.0.0
+    - spatialdata >=0.2.1
+    - tifffile
+    - tqdm
+    - xarray
+    - zarr 
 test:
   imports:
     - spatialdata_io
