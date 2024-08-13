@@ -29,7 +29,7 @@ requirements:
     - imagecodecs
     - imageio
     - joblib
-    - multiscale_spatial_image >=1.0.0
+    - multiscale-spatial-image >=1.0.0
     - numpy
     - packaging
     - pandas
@@ -41,7 +41,7 @@ requirements:
     - scikit-image
     - scipy
     - shapely
-    - spatial_image >=1.0.0
+    - spatial-image >=1.0.0
     - spatialdata >=0.2.1
     - tifffile
     - tqdm
