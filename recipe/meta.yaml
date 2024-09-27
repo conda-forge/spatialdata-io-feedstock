@@ -42,7 +42,7 @@ requirements:
     - scipy
     - shapely
     - spatial-image >=1.0.0
-    - spatialdata >=0.2.1
+    - spatialdata >=0.2.2
     - tifffile
     - tqdm
     - xarray
