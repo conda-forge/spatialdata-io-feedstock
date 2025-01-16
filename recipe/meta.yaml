@@ -6,17 +6,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spatialdata_io-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata_io-{{ version }}.tar.gz
   sha256: 212f884794274ce1cf6bed22f4060bdde119f551c63a15c4c5bcf09da1718837
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
     - pip
@@ -34,7 +34,7 @@ requirements:
     - packaging
     - pandas
     - pyarrow
-    - python >=3.9
+    - python >={{ python_min }}
     - pyyaml
     - readfcs
     - scanpy
@@ -54,6 +54,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/scverse/spatialdata-io
