@@ -1,5 +1,5 @@
 {% set name = "spatialdata-io" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata_io-{{ version }}.tar.gz
-  sha256: 7bb079c87858b9731642ae87f8beea148a14bdf23e7dce89a12ec1f9c20c163d
+  sha256: d4f57e1732ab2a2585b4a584aaf9cf489bc7a9a6cf88676b7325a95f2896060d
 
 build:
   noarch: python
@@ -22,32 +22,21 @@ requirements:
     - hatch-vcs
     - pip
   run:
-    - anndata >=0.9.1
     - dask
+    - click
     - dask-image
-    - geopandas
     - h5py
     - imagecodecs
-    - imageio
     - joblib
-    - multiscale-spatial-image >=1.0.0
     - numpy
-    - packaging
-    - pandas
     - pyarrow
     - python >={{ python_min }}
-    - pyyaml
     - readfcs
     - scanpy
     - scikit-image
-    - scipy
-    - shapely
-    - spatial-image >=1.0.0
-    - spatialdata >=0.2.2
-    - tifffile
-    - tqdm
-    - xarray
-    - zarr
+    - spatialdata >=0.2.6
+    - tifffile >=2023.8.12
+    - ome-types
 test:
   imports:
     - spatialdata_io
