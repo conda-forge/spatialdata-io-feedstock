@@ -48,6 +48,7 @@ requirements:
     - tqdm
     - xarray
     - zarr
+    - ome-types
 test:
   imports:
     - spatialdata_io
