@@ -22,32 +22,20 @@ requirements:
     - hatch-vcs
     - pip
   run:
-    - anndata >=0.9.1
     - dask
+    - click
     - dask-image
-    - geopandas
     - h5py
     - imagecodecs
-    - imageio
     - joblib
-    - multiscale-spatial-image >=1.0.0
     - numpy
-    - packaging
-    - pandas
     - pyarrow
     - python >={{ python_min }}
-    - pyyaml
     - readfcs
     - scanpy
     - scikit-image
-    - scipy
-    - shapely
-    - spatial-image >=1.0.0
-    - spatialdata >=0.2.2
-    - tifffile
-    - tqdm
-    - xarray
-    - zarr
+    - spatialdata >=0.2.6
+    - tifffile>=2023.8.12
     - ome-types
 test:
   imports:
