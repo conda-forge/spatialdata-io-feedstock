@@ -1,5 +1,5 @@
 {% set name = "spatialdata-io" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata_io-{{ version }}.tar.gz
-  sha256: 6eb4174505dd1dc0f5e375cae651ccc250951e45faa23ba61b47a22c0ffbf47f
+  sha256: 082e3ac7765861503e16dba865cbe4fc97b9e7a8eb9554dfb3c7f555987bfa2b
 
 build:
   noarch: python
