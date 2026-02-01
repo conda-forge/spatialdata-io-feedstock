@@ -37,6 +37,7 @@ requirements:
     - spatialdata >=0.2.6
     - tifffile >=2023.8.12
     - ome-types
+    - xmltodict
 test:
   imports:
     - spatialdata_io
