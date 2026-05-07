@@ -35,7 +35,7 @@ requirements:
     - readfcs
     - scanpy
     - scikit-image
-    - spatialdata >=0.2.6
+    - spatialdata >=0.7.3a0
     - tifffile >=2023.8.12
     - ome-types
     - xmltodict
