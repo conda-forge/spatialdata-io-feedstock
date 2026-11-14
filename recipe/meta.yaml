@@ -1,5 +1,5 @@
 {% set name = "spatialdata-io" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata_io-{{ version }}.tar.gz
-  sha256: be07ffdbf8f74aefd17d14a7e50fff08f2aa42f709d1f628da6b619b786d04b6
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata_io-{{ version }}.tar.gz
+  sha256: 2297a1e243c59d85fa26acf4352166ce97b4c49ef170a859d0160f86fc4fbc60
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - hatch-vcs
     - pip
   run:
+    - session-info2
     - anndata
     - dask
     - click
@@ -35,7 +36,7 @@ requirements:
     - readfcs
     - scanpy
     - scikit-image
-    - spatialdata >=0.7.3
+    - spatialdata >=0.7.3a0
     - tifffile >=2023.8.12
     - ome-types
     - xmltodict
